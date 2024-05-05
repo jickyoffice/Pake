@@ -60,9 +60,9 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4.0.2
         with:
-          node-version: 20
+          node-version: 22
 
       - name: Install Rust for ubuntu-20.04
         if: inputs.platform == 'ubuntu-20.04'
